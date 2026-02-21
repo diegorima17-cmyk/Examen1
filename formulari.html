@@ -1,173 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Sitio de Orientación Universitaria</title>
+<meta charset="UTF-8">
+<title>Sitio de Orientación Universitaria</title>
 </head>
-
 <body>
 
-    <header>
-        <center>
-            <img src="imagenes/lb.png" width="25%" alt="logo universidad">
-            <h1>Sitio de Orientación para Estudiantes de Nuevo Ingreso</h1>
-        </center>
-        <hr>
-    </header>
+<header>
+<center>
+<img src="imagenes/lb.png" width="25%" alt="logo universidad">
+<h1>Sitio de Orientación para Estudiantes de Nuevo Ingreso</h1>
+</center>
+<hr>
+</header>
 
-  
-    <nav>
-        <center>
-            <a href="#formulario">Formulario</a> |
-            <a href="#informacion">Información</a> |
-            <a href="#preguntas">Preguntas Frecuentes</a> |
-            <a href="#contacto">Contacto</a>
-        </center>
-        <hr>
-    </nav>
+<nav>
+<center>
+<a href="#formulario">Formulario</a> |
+<a href="#informacion">Información</a> |
+<a href="#preguntas">Preguntas Frecuentes</a> |
+<a href="#contacto">Contacto</a>
+</center>
+<hr>
+</nav>
+
+<main>
 
 
-    <main>
+<section id="formulario">
+<h2>Formulario de Orientación</h2>
 
-       
-        <section id="formulario">
-            <h2>Formulario de Orientación</h2>
+<form action="registro_exitoso.html">
 
-            <form>
+<fieldset>
+<legend>Datos personales</legend>
+<label>Nombre completo:</label><br>
+<input type="text" required><br><br>
+<label>Correo electrónico:</label><br>
+<input type="email" required><br><br>
+<label>Número de teléfono:</label><br>
+<input type="tel">
+</fieldset>
 
-                <fieldset>
-                    <legend>Datos personales</legend>
+<fieldset>
+<legend>Situación académica</legend>
+<label><input type="radio" name="semestre" required> Nuevo ingreso</label><br>
+<label><input type="radio" name="semestre"> Primer semestre</label><br>
+<label><input type="radio" name="semestre"> Segundo semestre</label><br>
+<label><input type="radio" name="semestre"> Otra</label>
+</fieldset>
 
-                    <label>Nombre completo:</label><br>
-                    <input type="text" required><br><br>
+<fieldset>
+<legend>Temas de orientación</legend>
+<label><input type="checkbox"> Horarios</label><br>
+<label><input type="checkbox"> Materias</label><br>
+<label><input type="checkbox"> Trámites</label><br>
+<label><input type="checkbox"> Plataformas</label><br>
+<label><input type="checkbox"> Otra</label>
+</fieldset>
 
-                    <label>Correo electrónico:</label><br>
-                    <input type="email" required><br><br>
+<fieldset>
+<legend>Carrera</legend>
+<label>Selecciona tu carrera:</label><br>
+<select required>
+<option value="">--Selecciona una opción--</option>
+<option>Ingeniería en Sistemas</option>
+<option>Administración</option>
+<option>Contaduría</option>
+<option>Derecho</option>
+<option>Otra</option>
+</select>
+</fieldset>
 
-                    <label>Número de teléfono:</label><br>
-                    <input type="tel">
-                </fieldset>
+<fieldset>
+<legend>Nivel de urgencia</legend>
+<label><input type="radio" name="urgencia" required> Baja</label><br>
+<label><input type="radio" name="urgencia"> Media</label><br>
+<label><input type="radio" name="urgencia"> Alta</label>
+</fieldset>
 
-                <fieldset>
-                    <legend>Situación académica</legend>
+<fieldset>
+<legend>Comentarios adicionales</legend>
+<textarea rows="4" cols="50" placeholder="Escribe aquí cualquier información adicional..."></textarea>
+</fieldset>
 
-                    <label><input type="radio" name="semestre" required> Nuevo ingreso</label><br>
-                    <label><input type="radio" name="semestre"> Primer semestre</label><br>
-                    <label><input type="radio" name="semestre"> Segundo semestre</label><br>
-                    <label><input type="radio" name="semestre"> Otra</label>
-                </fieldset>
+<br>
+<button type="submit">Enviar solicitud</button>
+<button type="reset">Limpiar formulario</button>
 
-                <fieldset>
-                    <legend>Temas de orientación</legend>
+</form>
+</section>
 
-                    <label><input type="checkbox"> Horarios</label><br>
-                    <label><input type="checkbox"> Materias</label><br>
-                    <label><input type="checkbox"> Trámites</label><br>
-                    <label><input type="checkbox"> Plataformas</label><br>
-                    <label><input type="checkbox"> Otra</label>
-                </fieldset>
+<hr>
 
-                <fieldset>
-                    <legend>Carrera</legend>
+<section>
+<h2>Video Informativo</h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H_GKPAn8KUo" frameborder="0" allowfullscreen></iframe>
+</center>
+</section>
 
-                    <label>Selecciona tu carrera:</label><br>
-                    <select required>
-                        <option value="">--Selecciona una opción--</option>
-                        <option>Ingeniería en Sistemas</option>
-                        <option>Administración</option>
-                        <option>Contaduría</option>
-                        <option>Derecho</option>
-                        <option>Otra</option>
-                    </select>
-                </fieldset>
+<hr>
 
-                <fieldset>
-                    <legend>Nivel de urgencia</legend>
+<section id="informacion">
+<h2>Información Importante</h2>
 
-                    <label><input type="radio" name="urgencia" required> Baja</label><br>
-                    <label><input type="radio" name="urgencia"> Media</label><br>
-                    <label><input type="radio" name="urgencia"> Alta</label>
-                </fieldset>
+<article>
+<h3>Plan de Estudios</h3>
+<p>Consulta las materias que cursarás durante tu carrera y la duración de cada semestre.</p>
+</article>
 
-                <fieldset>
-                    <legend>Comentarios adicionales</legend>
+<article>
+<h3>Horarios</h3>
+<p>Revisa cómo funcionan los turnos y modalidades de clase.</p>
+</article>
 
-                    <textarea rows="4" cols="50" placeholder="Escribe aquí cualquier información adicional..."></textarea>
-                </fieldset>
+<article>
+<h3>Trámites Escolares</h3>
+<p>Información sobre inscripción, bajas, constancias y procesos administrativos.</p>
+</article>
 
-                <br>
-                <button type="submit">Enviar solicitud</button>
-                <button type="reset">Limpiar formulario</button>
+<article>
+<h3>Plataformas Institucionales</h3>
+<p>Guía sobre el uso del correo institucional y plataformas académicas.</p>
+</article>
+</section>
 
-            </form>
-        </section>
+<hr>
 
-        <hr>
+<section id="preguntas">
+<h2>Preguntas Frecuentes</h2>
+<ul>
+<li>¿Cómo realizo mi inscripción?</li>
+<li>¿Dónde consulto mi horario?</li>
+<li>¿Cómo recupero mi contraseña institucional?</li>
+<li>¿A quién puedo acudir si tengo dudas?</li>
+</ul>
+</section>
 
-        <section>
-            <h2>Video Informativo</h2>
-            <center>
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/H_GKPAn8KUo"
-                frameborder="0"
-                allowfullscreen></iframe>
-            </center>
-        </section>
+</main>
 
-        <hr>
+<hr>
 
-       
-        <section id="informacion">
-            <h2>Información Importante</h2>
-
-            <article>
-                <h3>Plan de Estudios</h3>
-                <p>Consulta las materias que cursarás durante tu carrera y la duración de cada semestre.</p>
-            </article>
-
-            <article>
-                <h3>Horarios</h3>
-                <p>Revisa cómo funcionan los turnos y modalidades de clase.</p>
-            </article>
-
-            <article>
-                <h3>Trámites Escolares</h3>
-                <p>Información sobre inscripción, bajas, constancias y procesos administrativos.</p>
-            </article>
-
-            <article>
-                <h3>Plataformas Institucionales</h3>
-                <p>Guía sobre el uso del correo institucional y plataformas académicas.</p>
-            </article>
-        </section>
-
-        <hr>
-
-      
-        <section id="preguntas">
-            <h2>Preguntas Frecuentes</h2>
-
-            <ul>
-                <li>¿Cómo realizo mi inscripción?</li>
-                <li>¿Dónde consulto mi horario?</li>
-                <li>¿Cómo recupero mi contraseña institucional?</li>
-                <li>¿A quién puedo acudir si tengo dudas?</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <hr>
-
-    
-    <footer id="contacto">
-        <center>
-            <h3>Contacto</h3>
-            <p>Correo: orientacion@universidad.edu</p>
-            <p>Teléfono: 222 123 4567</p>
-            <p>© 2026 Sitio de Orientación Universitaria</p>
-        </center>
-    </footer>
+<footer id="contacto">
+<center>
+<h3>Contacto</h3>
+<p>Correo: orientacion@universidad.edu</p>
+<p>Teléfono: 222 123 4567</p>
+<p>© 2026 Sitio de Orientación Universitaria</p>
+</center>
+</footer>
 
 </body>
 </html>
