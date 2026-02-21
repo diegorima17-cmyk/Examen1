@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Orientacion</title>
+</head>
+<body>
+    <fieldset>
+        <img src="imagenes/lb.png" width="30%" alt="logo buap">
+    </fieldset>
+    
+    <fieldset>
+        <h1>Formulario de Orientacion para los estudiantes</h1>
+        <form class="Formulario">
+    </fieldset>
+    <fieldset>
+        <p>Complete este formulario para poder saber como ayudarte</p>
+        
+        <label for="nombre">Escribe tu nombre completo</label>
+        <input type="text"id="email" required>        
+        <label for="email">Escribe tu correo</label>
+        <input type="text"id="email" required>
+    </fieldset>
+    <fieldset>
+        <h2>¿En que situacion te encuentras?</h2>
+        <div class="grupo">
+            <label"><input type="radio" name="semestre" required>Nuevo ingreso</label>
+            <label"><input type="radio" name="semestre">Primer semestre</label>
+            <label"><input type="radio" name="semestre">Segundo semestre</label>
+            <p><label"><input type="radio" name="situacion" onclick="mostrarOtra(true)">Otra</label></div>
+            <div id="otraSituacion" class="oculto"><label>Espesifica cual es tu duda</label><input type="text"></p></div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h2>¿Sobre que temas necesitas orientacion?</h2>
+        <div class="grupo" >
+            <label><input type="checkbox">Horarios</label>
+             <div class="grupo">
+            <label><input type="checkbox">Materias</label>
+             <div class="grupo">
+            <label><input type="checkbox">Tramites</label>
+             <div class="grupo">
+            <label><input type="checkbox">Plataformas</label>
+            <p><label"><input type="radio" name="situacion" onclick="mostrarOtra(true)">Otra</label></div>
+            <div id="otraSituacion" class="oculto"><label>Espesifica cual es tu duda</label><input type="text"></p></div>
+
+          <button type="submit">Enviar solicitud</button>
+
+          
+
+    </fieldset>
+    <fieldset>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/H_GKPAn8KUo?si=0rHuPN_CJSgF37K_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    </fieldset>
+      </form>
+    
+</body>
+</html>
