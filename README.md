@@ -10,3 +10,17 @@ Desarrollar un sitio web informativo que brinde orientación clara y organizada 
 Project Manager: Kevin David Carmona Rivera
 Desarrollador Front 1: Diego Rivera Macias
 Desarrollador Front 2: Jose Maria Rojas Sorcia
+
+## Conflicto generado
+El conflicto ocurrió porque dos integrantes del equipo modificaron el mismo párrafo de la descripción principal en ramas diferentes. Al intentar hacer merge hacia la rama main, Git detectó cambios incompatibles en el mismo bloque de código.
+
+## Cómo lo resolvimos
+Primero identificamos el archivo en conflicto usando git status.
+Después abrimos el archivo en VS Code y analizamos ambas versiones del texto.
+De forma colaborativa decidimos dejar la version del integranteA.
+Posteriormente eliminamos las marcas de conflicto (<<<<<<<, =======, >>>>>>>), guardamos el archivo y realizamos:
+git add .
+git commit -m "Conflicto resuelto colaborativamente en descripcion principal"
+
+## Qué aprendimos
+Aprendimos cómo Git detecta conflictos cuando dos ramas modifican la misma sección de un archivo, la importancia de la comunicación en el equipo y el proceso correcto para resolver conflictos de forma colaborativa sin perder información.
