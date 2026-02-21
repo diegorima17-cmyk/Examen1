@@ -1,103 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Orientacion</title>
+    <title>Sitio de Orientación Universitaria</title>
 </head>
+
 <body>
 
-    <fieldset>
-        <img src="imagenes/lb.png" width="30%" alt="logo buap">
-    </fieldset>
+    <header>
+        <center>
+            <img src="imagenes/lb.png" width="25%" alt="logo universidad">
+            <h1>Sitio de Orientación para Estudiantes de Nuevo Ingreso</h1>
+        </center>
+        <hr>
+    </header>
+
+  
+    <nav>
+        <center>
+            <a href="#formulario">Formulario</a> |
+            <a href="#informacion">Información</a> |
+            <a href="#preguntas">Preguntas Frecuentes</a> |
+            <a href="#contacto">Contacto</a>
+        </center>
+        <hr>
+    </nav>
+
+
+    <main>
+
+       
+        <section id="formulario">
+            <h2>Formulario de Orientación</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label>Nombre completo:</label><br>
+                    <input type="text" required><br><br>
+
+                    <label>Correo electrónico:</label><br>
+                    <input type="email" required><br><br>
+
+                    <label>Número de teléfono:</label><br>
+                    <input type="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Situación académica</legend>
+
+                    <label><input type="radio" name="semestre" required> Nuevo ingreso</label><br>
+                    <label><input type="radio" name="semestre"> Primer semestre</label><br>
+                    <label><input type="radio" name="semestre"> Segundo semestre</label><br>
+                    <label><input type="radio" name="semestre"> Otra</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Temas de orientación</legend>
+
+                    <label><input type="checkbox"> Horarios</label><br>
+                    <label><input type="checkbox"> Materias</label><br>
+                    <label><input type="checkbox"> Trámites</label><br>
+                    <label><input type="checkbox"> Plataformas</label><br>
+                    <label><input type="checkbox"> Otra</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Carrera</legend>
+
+                    <label>Selecciona tu carrera:</label><br>
+                    <select required>
+                        <option value="">--Selecciona una opción--</option>
+                        <option>Ingeniería en Sistemas</option>
+                        <option>Administración</option>
+                        <option>Contaduría</option>
+                        <option>Derecho</option>
+                        <option>Otra</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nivel de urgencia</legend>
+
+                    <label><input type="radio" name="urgencia" required> Baja</label><br>
+                    <label><input type="radio" name="urgencia"> Media</label><br>
+                    <label><input type="radio" name="urgencia"> Alta</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+
+                    <textarea rows="4" cols="50" placeholder="Escribe aquí cualquier información adicional..."></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Enviar solicitud</button>
+                <button type="reset">Limpiar formulario</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Video Informativo</h2>
+            <center>
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/H_GKPAn8KUo"
+                frameborder="0"
+                allowfullscreen></iframe>
+            </center>
+        </section>
+
+        <hr>
+
+       
+        <section id="informacion">
+            <h2>Información Importante</h2>
+
+            <article>
+                <h3>Plan de Estudios</h3>
+                <p>Consulta las materias que cursarás durante tu carrera y la duración de cada semestre.</p>
+            </article>
+
+            <article>
+                <h3>Horarios</h3>
+                <p>Revisa cómo funcionan los turnos y modalidades de clase.</p>
+            </article>
+
+            <article>
+                <h3>Trámites Escolares</h3>
+                <p>Información sobre inscripción, bajas, constancias y procesos administrativos.</p>
+            </article>
+
+            <article>
+                <h3>Plataformas Institucionales</h3>
+                <p>Guía sobre el uso del correo institucional y plataformas académicas.</p>
+            </article>
+        </section>
+
+        <hr>
+
+      
+        <section id="preguntas">
+            <h2>Preguntas Frecuentes</h2>
+
+            <ul>
+                <li>¿Cómo realizo mi inscripción?</li>
+                <li>¿Dónde consulto mi horario?</li>
+                <li>¿Cómo recupero mi contraseña institucional?</li>
+                <li>¿A quién puedo acudir si tengo dudas?</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr>
+
     
-    <fieldset>
-        <h1>Formulario de Orientacion para los estudiantes</h1>
-        <form class="Formulario">
-    </fieldset>
-
-    <fieldset>
-        <p>Complete este formulario para poder saber como ayudarte</p>
-        
-        <label for="nombre">Escribe tu nombre completo</label>
-        <input type="text" id="nombre" required>        
-
-        <label for="email">Escribe tu correo</label>
-        <input type="email" id="email" required>
-    </fieldset>
-
-    <fieldset>
-        <h2>¿En que situacion te encuentras?</h2>
-        <div class="grupo">
-            <label><input type="radio" name="semestre" required> Nuevo ingreso</label>
-            <label><input type="radio" name="semestre"> Primer semestre</label>
-            <label><input type="radio" name="semestre"> Segundo semestre</label>
-            <label><input type="radio" name="semestre"> Otra</label>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <h2>¿Sobre que temas necesitas orientacion?</h2>
-        <div class="grupo">
-            <label><input type="checkbox"> Horarios</label>
-            <label><input type="checkbox"> Materias</label>
-            <label><input type="checkbox"> Tramites</label>
-            <label><input type="checkbox"> Plataformas</label>
-            <label><input type="checkbox"> Otra</label>
-        </div>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <h2>¿Qué carrera estudias o quieres estudiar?</h2>
-        <label for="carrera">Selecciona tu carrera:</label>
-        <select id="carrera" name="carrera" required>
-            <option value="">--Selecciona una opción--</option>
-            <option>Ingeniería en Sistemas</option>
-            <option>Administración</option>
-            <option>Contaduría</option>
-            <option>Derecho</option>
-            <option>Otra</option>
-        </select>
-    </fieldset>
-
-    <fieldset>
-        <h2>Información de contacto</h2>
-        <label for="telefono">Número de teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 2221234567">
-    </fieldset>
-
-    <fieldset>
-        <h2>¿Qué tan urgente es tu solicitud?</h2>
-        <label><input type="radio" name="urgencia" required> Baja</label>
-        <label><input type="radio" name="urgencia"> Media</label>
-        <label><input type="radio" name="urgencia"> Alta</label>
-    </fieldset>
-
-    <fieldset>
-        <h2>Comentarios adicionales</h2>
-        <textarea rows="4" cols="50" placeholder="Escribe aquí cualquier información adicional..."></textarea>
-    </fieldset>
-
-    <fieldset>
-        <button type="submit">Enviar solicitud</button>
-        <button type="reset">Limpiar formulario</button>
-    </fieldset>
-
-    <fieldset>
-        <p>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/H_GKPAn8KUo?si=0rHuPN_CJSgF37K_" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-            </iframe>
-        </p>
-    </fieldset>
-
-    </form>
+    <footer id="contacto">
+        <center>
+            <h3>Contacto</h3>
+            <p>Correo: orientacion@universidad.edu</p>
+            <p>Teléfono: 222 123 4567</p>
+            <p>© 2026 Sitio de Orientación Universitaria</p>
+        </center>
+    </footer>
 
 </body>
 </html>
